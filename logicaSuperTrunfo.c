@@ -38,14 +38,14 @@ int main() {
 
   printf("Dados da cidade 1:\n");
 
-  printf("Digite o nome da cidade:\n");
+  printf("digite o numero de habitantes:\n");
+  scanf("%d", &populacaocarta1);
+
+  /*printf("Digite o nome da cidade:\n");
   scanf("%s", nomecarta1);
 
   printf("digite o estado da cidade com uma letra de A a H:\n");
   scanf("%s", estadocarta1);
-
-  printf("digite o numero de habitantes:\n");
-  scanf("%d", &populacaocarta1);
 
   printf("digite o PIB:\n");
   scanf("%f", &pibcarta1);
@@ -57,20 +57,20 @@ int main() {
   scanf("%f", &areacarta1);
 
   printf("digite um codigo para a cidade, sendo ele a letra escolhida pra o estado e um numero de 01 a 04:\n");
-  scanf("%s", codigocarta1);
+  scanf("%s", codigocarta1);*/
 
   //printf e scanf da cidade2
 
   printf("Dados da cidade 2:\n");
+
+  printf("digite o numero de habitantes:\n");
+  scanf("%d", &populacaocarta2);
   
-  printf("Digite o nome da cidade:\n");
+  /*printf("Digite o nome da cidade:\n");
   scanf("%s", nomecarta2);
 
   printf("digite o estado da cidade com uma letra de A a H:\n");
   scanf("%s", estadocarta2);
-
-  printf("digite o numero de habitantes:\n");
-  scanf("%d", &populacaocarta2);
 
   printf("digite o PIB:\n");
   scanf("%f", &pibcarta2);
@@ -82,31 +82,31 @@ int main() {
   scanf("%f", &areacarta2);
 
   printf("digite um codigo para a cidade, sendo ele a letra escolhida pra o estado e um numero de 01 a 04:\n");
-  scanf("%s", codigocarta2);
+  scanf("%s", codigocarta2);*/
 
   //calculo do PIB per capita e densidade da cidade1 e cidade2
   
-  pibpercapitacarta1 = (float) pibcarta1 / populacaocarta1;
+  /*pibpercapitacarta1 = (float) pibcarta1 / populacaocarta1;
 
   pibpercapitacarta2 = (float) pibcarta2 / populacaocarta2;
 
   densidadecarta1 = (float) populacaocarta1 / areacarta1;
 
-  densidadecarta2 = (float) populacaocarta2 / areacarta2;
+  densidadecarta2 = (float) populacaocarta2 / areacarta2;*/
 
   //calculo super poder
 
-  densidadesuperpoder1 = 1 * densidadecarta1;
+  /*densidadesuperpoder1 = 1 * densidadecarta1;
   
   densidadesuperpoder2 = 1 * densidadecarta2;
 
   superpodercarta1 = (float) populacaocarta1 + pibcarta1 + areacarta1 + pontosturisticoscarta1 + pibpercapitacarta1 + densidadesuperpoder1;
 
-  superpodercarta2 = (float) populacaocarta2 + pibcarta2 + areacarta2 + pontosturisticoscarta2 + pibpercapitacarta2 + densidadesuperpoder2;
-  
+  superpodercarta2 = (float) populacaocarta2 + pibcarta2 + areacarta2 + pontosturisticoscarta2 + pibpercapitacarta2 + densidadesuperpoder2;*/
+
   //exibição dos dados da cidade1
 
-  printf("Dados da cidade 1:\n");
+  /*printf("Dados da cidade 1:\n");
 
   printf("nome: %s\n", nomecarta1);
 
@@ -126,11 +126,11 @@ int main() {
 
   printf("Densidade demográfica: %.2f\n", densidadecarta1);
 
-  printf("Super poder: %.2f\n", superpodercarta1);
+  printf("Super poder: %.2f\n", superpodercarta1);*/
 
   //exibição dos dados da cidade2
 
-  printf("Dados da cidade 2:\n");
+  /*printf("Dados da cidade 2:\n");
 
   printf("nome: %s\n", nomecarta2);
 
@@ -150,27 +150,33 @@ int main() {
 
   printf("Densidade demográfica: %.2f\n", densidadecarta2);
 
-  printf("Super poder: %.2f\n", superpodercarta2);
+  printf("Super poder: %.2f\n", superpodercarta2);*/
 
   //comparação valores cartas e super poder
 
-  resultadopopulacao = populacaocarta1 > populacaocarta2;
+  /*resultadopopulacao = populacaocarta1 > populacaocarta2;
   resultadopib = pibcarta1 > pibcarta2;
   resultadopontosturisticos = pontosturisticoscarta1 > pontosturisticoscarta2;
   resultadoarea = areacarta1 > areacarta2;
   resultadosuperpoder = superpodercarta1 > superpodercarta2;
   resultadopibpercapita = pibpercapitacarta1 > pibpercapitacarta2;
-  resultadodensidade = densidadecarta1 < densidadecarta2;
+  resultadodensidade = densidadecarta1 < densidadecarta2;*/
 
   //printf dos resultados da comparação das cartas
 
-  printf("Comparação das cartas:\n");
+  /*printf("Comparação das cartas:\n");
   printf("População: %d\n", resultadopopulacao);
   printf("PIB: %d\n", resultadopib);
   printf("Pontos Turísticos: %d\n", resultadopontosturisticos);
   printf("Área: %d\n", resultadoarea);
   printf("PIB per capita: %d\n", resultadopibpercapita);
   printf("Densidade demográfica: %d\n", resultadodensidade);
-  printf("Super Poder: %d\n", resultadosuperpoder);
+  printf("Super Poder: %d\n", resultadosuperpoder);*/
 
-  return 0;
+  //printf e if else comparacao e resultado
+  printf("Populacao carta1: %d\n Populacao carta2: %d\n", populacaocarta1, populacaocarta2);
+  if(populacaocarta1 > populacaocarta2){
+    printf("A carta 1 venceu!!!\n");
+  } else {
+    printf("A carta 2 venceu!!!\n");
+  }
